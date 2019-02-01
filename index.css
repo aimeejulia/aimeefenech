@@ -40,6 +40,14 @@ body {
 
 }
 
+#contact-me {
+  font-family: 'Pacifico', cursive;
+}
+
+#contact-me:hover {
+  height: auto;
+}
+
 #social-media {
   display: table;
   width: 100%;
