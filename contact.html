@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="playground.css"  type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+</head>
+<body>
+  <div id="header">
+    <h2>Aimee's contact form</h2>
+  </div>
+  <nav>
+    <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="contact.html">Make it a good one!</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="playground.html">Current Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">CV</a>
+    </li>
+  </ul>
+    </nav>
+    <br />
+    <div class="container" id="form-box">
+
+      <form method="POST" action="contact.php">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input id="email" type="email" name="email" class="form-control" required  aria-describedby="email">
+          <small class="form-text text-muted">I'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="textarea" class="form-control" required>
+        </div>
+        <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" class="form-control" rows="3" required></textarea>
+  </div>
+        <input type="submit" name="send" class="btn btn-secondary"></input>
+      </form>
+    </div>
+    <br />
+
+    <footer class="page-footer font-small">
+        <div class="footer-copyright text-center py-3">Website by Aimee Fenech is licensed under a <a class="links" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License.</a>
+        </div>
+      </footer>
+</body>
