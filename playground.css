@@ -16,9 +16,8 @@ h4 {
   font-family: 'Karla';
 }
 
-.card {
-  height: 23em;
-  width: auto;
+.card-text {
+  font-size: 0.8em;
 }
 
 
