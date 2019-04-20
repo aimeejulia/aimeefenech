@@ -12,7 +12,7 @@
   <nav>
     <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" href="contact.html">Make it a good one!</a>
+      <a class="nav-link active" href="contact.html">Communicate with me</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="playground.html">Current Projects</a>
