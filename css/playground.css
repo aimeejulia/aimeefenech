@@ -30,6 +30,12 @@ h4 {
   padding-bottom: 50px;
 }
 
+.title {
+  font-family: 'Karla';
+  padding-bottom: 1em;
+  text-align: center;
+}
+
 .card-title:hover {
   text-decoration: underline;
 }
