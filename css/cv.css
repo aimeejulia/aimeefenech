@@ -55,6 +55,9 @@ body {
   text-align: left;
   padding-left: 15px;
   padding-top: 20px;
+  border-radius: 30px;
+  background-color: #F4D35E;
+  color: #EE964B;
 }
 
 .fab {
@@ -151,7 +154,7 @@ body {
 }
 
 .footer-copyright {
-  background-color: #F95738;
-  color: white;
-  font-size: 0.5em;
+  background-color: #F95738 !important;
+  color: white !important;
+  font-size: 0.8em;
 }
