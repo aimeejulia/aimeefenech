@@ -1,10 +1,22 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<link rel="stylesheet" href="playground.css"  type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Aimee's Design Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/playground.css" rel="stylesheet">
+  </head>
 <body>
   <div id="header">
     <h2>Aimee's contact form</h2>
@@ -65,8 +77,18 @@ if(isset($_POST['email'])) {
 
 </div>
 <br />
-<footer class="footer page-footer font-small mt-auto" style="margin-top:100px;">
-    <div class="footer-copyright text-center py-3">Website by Aimee Fenech - licensed under a <a class="links" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License.</a>
-    </div>
-  </footer>
+<footer class="page-footer font-small">
+  <div class="footer-copyright text-center py-3">Website by Aimee Fenech is licensed under a <a class="links" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License.</a>
+  </div>
+</footer>
+</div>
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
