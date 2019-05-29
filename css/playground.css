@@ -94,5 +94,9 @@ h4 {
 
 .btn {
   background-color: #F95738;
+  color: white !important;
+}
+
+a {
   color: white;
 }
