@@ -85,3 +85,8 @@ h4 {
 .links:hover {
   color: black;
 }
+
+.btn {
+  background-color: #F95738;
+  color: white;
+}
