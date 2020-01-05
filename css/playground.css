@@ -22,10 +22,6 @@ h4 {
   font-family: 'Karla';
 }
 
-#main-page {
-  padding-bottom: 50px;
-}
-
 .title {
   font-family: 'Karla';
   padding-bottom: 1em;
@@ -49,27 +45,11 @@ h4 {
     }
 }
 
-@media (min-width: 35em) {
-    .card-columns {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-    }
-}
-
-@media (min-width: 62em) {
-    .card-columns {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-    }
-}
-
 @media (min-width: 75em) {
     .card-columns {
-        -webkit-column-count: 3;
-        -moz-column-count: 3;
-        column-count: 3;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
     }
 }
 
@@ -77,15 +57,16 @@ h4 {
   background-color: #176ECF !important;
   color: white !important;
   font-size: 0.8em;
+  padding-top: 0;
+  margin-top: 0;
 }
 
-
 .links {
-  color: black;
+  color: white;
 }
 
 .links:hover {
-  color: black;
+  color: white;
 }
 
 .btn {
