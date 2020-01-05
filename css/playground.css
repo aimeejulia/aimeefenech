@@ -4,10 +4,6 @@ html, body {
   background-color: white;
 }
 
-.content {
-  min-height: 100%;
-}
-
 #header {
   height: 170px;
   font-family: 'Karla';
@@ -16,10 +12,10 @@ html, body {
 }
 
 .nav-link {
-  color: #F95738;
+  color: #176ECF;
 }
 .nav-link:hover {
-  color: #F95738;
+  color: #176ECF;
 }
 
 h4 {
@@ -78,7 +74,7 @@ h4 {
 }
 
 .footer-copyright {
-  background-color: #F95738 !important;
+  background-color: #176ECF !important;
   color: white !important;
   font-size: 0.8em;
 }
@@ -93,7 +89,7 @@ h4 {
 }
 
 .btn {
-  background-color: #F95738;
+  background-color: #176ECF;
   color: white !important;
 }
 
