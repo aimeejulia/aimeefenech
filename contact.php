@@ -23,20 +23,17 @@
   </div>
   <nav>
     <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="contact.html">Communicate with me</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">Current Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="https://aimeefenech.com/permaculture/">Permaculture</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="cv.html">CV</a>
-    </li>
-  </ul>
-    </nav>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Aimee's Ecology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i></a>
+      </li>
+    </ul>
+  </nav>
     <br />
     <div class="container" id="form-box">
 
