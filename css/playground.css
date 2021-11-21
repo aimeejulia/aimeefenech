@@ -69,3 +69,7 @@ a {
 #dynamic-ecosystem {
   padding: 50px;
 }
+
+#MediumWidget {
+  min-height: 200px;
+}
