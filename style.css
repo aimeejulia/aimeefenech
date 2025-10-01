@@ -96,6 +96,11 @@ body {
   text-align: center;
 }
 
+.book-appointment {
+  width: 60%;
+  align-items: left;
+}
+
 .btn-secondary{
   background-color: #E37222;
   border: none;
