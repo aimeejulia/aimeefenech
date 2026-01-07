@@ -10,10 +10,10 @@ footer{
 }
 
 #header {
-  height: 170px;
+  height: 120px;
   font-family: 'Karla';
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .nav-link {
@@ -60,6 +60,11 @@ h4 {
 .btn {
   background-color: #176ECF;
   color: white !important;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: orange !important;
 }
 
 a {
