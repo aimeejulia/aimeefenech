@@ -71,6 +71,16 @@ a {
   color: white;
 }
 
+/* Ensure links inside alerts are readable on pale backgrounds */
+.alert a {
+  color: #0b5ed7; /* clear, high-contrast link color */
+  text-decoration: underline;
+  font-weight: 600;
+}
+.alert a:hover {
+  color: #084298;
+}
+
 #dynamic-ecosystem {
   padding: 50px;
 }
