@@ -98,7 +98,7 @@ a:hover {
 
 /* Card/Container Styles */
 .card {
-  width: min(900px, 100%);
+  width: min(1200px, 100%);
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 18px;
@@ -108,7 +108,7 @@ a:hover {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }
@@ -181,10 +181,10 @@ footer img {
 
 .tagline {
   margin: 0 auto 8px;
-  line-height: 1.6;
+  line-height: 2;
   color: var(--muted);
   font-size: 16px;
-  max-width: 700px;
+  max-width: 100%;
 }
 
 .tagline strong {
