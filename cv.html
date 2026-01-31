@@ -1,271 +1,342 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aimee Fenech - CV</title>
+    <meta name="description" content="Aimee Fenech - Curriculum Vitae" />
+    <link rel="stylesheet" href="/css/playground.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <style>
+      /* CV-specific style overrides */
+      body {
+        padding: 24px;
+      }
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Aimee Fenech - CV</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="css/cv.css" rel="stylesheet">
-  <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-</head>
+      .container {
+        max-width: 1100px;
+      }
+
+      .card {
+        width: 100%;
+        margin-bottom: 24px;
+      }
+      .cv-header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid var(--border);
+        margin-bottom: 16px;
+      }
+
+      h2, h3 {
+        border-bottom: 2px solid var(--border);
+        padding-bottom: 8px;
+      }
+
+      .job-title, .course-title {
+        font-style: italic;
+        color: var(--muted);
+        margin: 4px 0;
+      }
+
+      .dates {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        margin: 4px 0 12px;
+      }
+
+      .company {
+        margin-top: 20px;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      footer {
+        margin-top: 32px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        font-size: 13px;
+        color: rgba(255,255,255,0.55);
+        text-align: center;
+      }
+
+      footer img {
+        vertical-align: middle;
+      }
+
+      @media print {
+        body {
+          background: white;
+          color: black;
+        }
+        .card {
+          border: none;
+          box-shadow: none;
+          backdrop-filter: none;
+        }
+        .back-link {
+          display: none;
+        }
+      }
+    </style>
+  </head>
 
   <body>
-    <div class="row">
-    <div class="col-md-4" id="sidebar">
-        <img src="img/aimee.jpeg" alt="Aimee" id="profile-picture">
-        <h1 id="name">Aimee Fenech</h1>
-        <br />
-        <p id="profile-statement">An experienced project manager who masters new skills quickly and readily takes up challenges. Specialised in management and co-ordination of teams for projects and target orientated tasks.</p>
-        <br />
-        <div id="social-media">
-          <center>
-            <a class="links" href="contact.html" target="_blank">Get in touch</a>
-            </center>
-          </div>
+    <div class="container">
+      <a href="/index2.html" class="back-link" aria-label="Back to Home"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Home</a>
+      
+      <main class="card">
+        <div class="cv-header">
+          <img src="img/aimee.jpeg" alt="Aimee Fenech" class="profile-picture">
+          <h1>Aimee Fenech</h1>
+          <p style="max-width: 700px; margin: 0 auto;">An experienced project manager who masters new skills quickly and readily takes up challenges. Specialised in management and co-ordination of teams for projects and target orientated tasks.</p>
+          <p style="margin-top: 12px;"><a href="contact.html">Get in touch</a></p>
         </div>
 
-    <div class="col-md-8" id="resume">
+        <h3>Professional Experience</h3>
 
-      <h3 class="section-title">Professional Experience</h3>
-      <br>
-
-      <h5 class="company">Minimum Viable Academy</h5>
-      <p class="job-title">Co-Founder | Group Process Facilitator</p>
-      <p class="dates">2022 to present</p>
-        <ul class="job-description">
+        <h5 class="company">Minimum Viable Academy</h5>
+        <p class="job-title">Co-Founder | Group Process Facilitator</p>
+        <p class="dates">2022 to present</p>
+        <ul>
           <li>session design & delivery using various tools including <a href="https://www.liberatingstructures.com/" target="_blank">Liberating Structures</a></li>
-          </ul>
+        </ul>
 
-      <h5 class="company">International Permaculture CoLab</h5>
-      <p class="job-title">Project Manager | Consultant</p>
-      <p class="dates">2020 to present</p>
-        <ul class="job-description">
+        <h5 class="company">International Permaculture CoLab</h5>
+        <p class="job-title">Project Manager | Consultant</p>
+        <p class="dates">2020 to present</p>
+        <ul>
           <li>Funding Circle - start up and project management consultant</li>
           <li>Digital Circle - project mangement consultant, web developer</li>
           <li>Capacity Plus - core team member, project manager & start up consultant</li>
-          </ul>
+        </ul>
 
-      <h5 class="company">Eco Hacker Farm</h5>
-      <p class="job-title">Co-Founder | Project Manager | Operations Coordinator</p>
-      <p class="dates">2015 to present</p>
-        <ul class="job-description">
+        <h5 class="company">Eco Hacker Farm</h5>
+        <p class="job-title">Co-Founder | Project Manager | Operations Coordinator</p>
+        <p class="dates">2015 to present</p>
+        <ul>
           <li>human resource management, acquisition and management of talent</li>
           <li>development of processess and procedures for onboarding</li>
           <li>project management for powerplant (opensource webapp) and site locations</li>
           <li>event Coordinator</li>
           <li>public relations & social media management</li>
-          </ul>
-
-          <h5 class="company">Freelance</h5>
-          <p class="job-title">Permaculture Educator</p>
-          <p class="dates">2015 to present</p>
-          <ul class="job-description">
-            <li>Permaculture Garden Planning & Design</li>
-            <li>Compost Toilet Design</li>
-            <li>Humanure management</li>
-            <li>Preservation of food</li>
-          </ul>
-
-          <h5 class="company">Freelance</h5>
-          <p class="job-title">Junior Front End Web Developer</p>
-          <p class="dates">2018 to present</p>
-          <ul class="job-description">
-            <li>website development</li>
-            <li>use current latest web technologies and trends: HTML5 | CSS | Bootstrap | JavaScript</li>
-          </ul>
-
-          <h5 class="company">Energie Dezent eV</h5>
-          <p class="job-title">Website Editor</p>
-          <p class="dates">2019 to present</p>
-          <ul class="job-description">
-            <li>editorial duties, implementing new pages & content</li>
-            <li>liasing between board members and IT professionals for upkeep of the website</li>
-          </ul>
-
-          <h5 class="company">RioLaden - Wittstock</h5>
-          <p class="job-title">Finance Team Lead & Website Developer</p>
-          <p class="dates">2019 to 2021</p>
-          <ul class="job-description">
-            <li>development of a business plan</li>
-            <li>design and upkeep of the website</li>
-            <li>research and developement of the <a href="https://docs.google.com/presentation/d/1ydgIMdkaB4GPZbxHvvvjPjvjxExNLMErVTsFVWzI17I/edit?usp=sharing">inclusive decision making model</a></li>
-          </ul>
-
-          <h5 class="company">Blevins Franks Financial Management Ltd.</h5>
-          <p class="job-title">Administration Manager</p>
-          <p class="dates">2015 to 2017</p>
-          <ul class="job-description">
-            <li>case management</li>
-            <li>use xplan to enhance management of tasks, effective monitoring of cases and escalation of issues when required</li>
-            <li>working practices and procedures </li>
-            <li>continue working with local management to develop better working practices and procedures,</li>
-            <li>provide assistance in the local office for adaptation of work practices to include xplan</li>
-            <li>relationship building and communication</li>
-            <li>be the link between with client services team and the local office</li>
-            <li>working with the team lead and the regional private client manager</li>
-          </ul>
-
-          <p class="job-title">Quality Assurance Lead</p>
-          <p class="dates">2014 - 2015</p>
-          <ul class="job-description">
-            <li>leading Client Services QA focusing on the quality of the applications submitted to providers</li>
-            <li>co-ordination of large/complex new business cases</li>
-            <li>liaison between Client Services and the Compliance team</li>
-          </ul>
-
-          <p class="job-title">Compliance Officer</p>
-          <p class="dates">2011 to 2014</p>
-          <ul class="job-description">
-            <li>check financial advisory reports </li>
-            <li>collate and compile MI reports </li>
-            <li>reviewing clients AML information </li>
-            <li>responding to clients complaints</li>
-            <li>answering interdepartmental procedural queries</li>
-            <li>updating and reviewing company procedures</li>
-            <li>maintaining various compliance logs</li>
-            <li>working on adhoc projects</li>
-          </ul>
-
-          <h5 class="company">Malta Women in Business</h5>
-          <p class="job-title">Founder | President | Editor</p>
-          <p class="dates">2011 to 2016</p>
-          <ul class="job-description">
-            <li>represent the organisation at public events, public speaking and networking </li>
-            <li>organising training & networking events </li>
-            <li>dealing with client queries and provide one to one consultations for small business set ups</li>
-            <li>maintaining organisations website and social media profiles</li>
-            <li>setting up, writing and editing a monthly newsletter publication</li>
-          </ul>
-
-          <h5 class="company">Northway Broker Ltd.</h5>
-          <p class="job-title">Training Coordinator</p>
-          <p class="dates">2010 to 2011</p>
-          <ul class="job-description">
-            <li>organise training schedules for new recruits and company employees </li>
-            <li>creating and updating training material </li>
-            <li>maintaining AML training material</li>
-            <li>delivering AML training and maintaining compliance</li>
-            <li>managing a team of trainers</li>
-          </ul>
-
-          <h5 class="company">SMP Partners Ltd.</h5>
-          <p class="job-title">Private Client Manager</p>
-          <p class="dates">2010</p>
-          <ul class="job-description">
-            <li>providing fiduciary services to a portfolio of clients, including writing power of attorneys, opening bank accounts, document legalisation and resolutions </li>
-            <li>debt collecting and following up pending matters </li>
-          </ul>
-
-          <h5 class="company">AXA Isle of Man Ltd.</h5>
-          <p class="job-title">Compliance Advisor</p>
-          <p class="dates">2007 to 2009</p>
-          <ul class="job-description">
-            <li>analyse regulatory developments and issued recommendations to maintain compliance </li>
-            <li>write and deliver training session for colleagues within the department </li>
-            <li>conduct investigations and evaluations of Suspicious Transactions</li>
-            <li>monitor departments and issued reports detailing procedural recommendations</li>
-            <li>coordinate the process for a new marketing department</li>
-            <li>direct Six Sigma project to map and implement processes to make the operations more effective and efficient </li>
-          </ul>
-
-          <h3 class="section-title">Education</h3>
-
-          <h5 class="company">Chartered Institute of Insurance</h5>
-          <p class="course-title">Life Office Administration, UK Financial Services, Regulations and Ethics</p>
-          <p class="dates">2008 to 2012</p>
-
-          <h5 class="company">Stonebridge College</h5>
-          <p class="course-title">Human Resources Management Diploma</p>
-          <p class="dates">2009</p>
-
-          <h5 class="company">freeCodeCamp</h5>
-          <p class="course-title">Responsive Web Design Certification</p>
-          <p class="dates">2018</p>
-
-          <h5 class="company">Permaculture Association UK / Aranya & Klaudia Van Gool</h5>
-          <p class="course-title">Permaculture Design Certificate</p>
-          <p class="dates">2019</p>
-
-          <h3 class="section-title">Technical Skills</h3>
-          <ul class="list-unstyled general-list">
-            <li>Web development: HTML5 | CSS | Bootstrap | jQuery | Git | Github</li>
-            <li>Microsoft Office products: Word | Excel | Powerpoint | Outlook</li>
-            <li>Google Products: Drive | Docs | Sheets | Slides | Forms | Drawings | Maps | Sites</li>
-            <li>Salesforce</li>
-            <li>Project Management Tools: Scrum | Redmine</li>
-            <li>Dokuwiki</li>
-            <li>Sketchup</li>
-            <li>Six Sigma</li>
-            <li>Liberating Structures</li>
-          </ul>
-
-          <h3 class="section-title">Language Skills</h3>
-          <ul class="list-unstyled general-list">
-            <li>Maltese | Mother tongue</li>
-            <li>English | Mother tongue</li>
-            <li>Italian | Fluent </li>
-            <li>Spanish | Basic </li>
-            <li>German  | Learning </li>
-          </ul>
-
-          <h3 class="section-title">Memberships</h3>
-          <ul class="list-unstyled general-list">
-            <li>Permaculture International Research Network</li>
-            <li>Permaculture Association Britian</li>
-            <li>International Association of Facilitators</li>
-
-          <h3 class="section-title">Volunteer Experience</h3>
-          <h5 class="company">Artists Network Alpuarra</h5>
-          <p class="course-title">Board Member</p>
-          <h5 class="company">Hackerspaces.org</h5>
-          <p class="course-title">Blog Editor, Project Manager for the Great Census of 2019</p>
-          <p class="dates">2018 to 2019</p>
-          <h5 class="company">Living Ability Not Disability</h5>
-          <p class="course-title">Social Media Promoter, Carer & Companion</p>
-          <p class="dates">2005 to 2016</p>
-
-          <h3 class="section-title">Personal Interests</h3>
-          <ul class="personal-interests list-unstyled">
-            <li>Responsible & Ethical finance</li>
-            <li>New technologies</li>
-            <li>Web development</li>
-            <li>Eco Communities & Villages</li>
-            <li>Eco Hacker Farm</li>
-            <li>Permaculture & organic food production</li>
-            <li>Politics & Peaceful Activism</li>
-            <li>Open Source software</li>
-            <li>Open Knowledge</li>
-            <li>Horse Riding, snorkelling and forest bathing</li>
-          </ul>
-          <br>
-          <h3 class="section-title">References</h3>
-          <ul class="list-unstyled references">
-            <li>available on request</li>
         </ul>
-      </div>
-</div>
-<footer class="page-footer font-small">
-    <div class="footer-copyright text-center py-3"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /><br></a>Personal Curriculum Vitae by Aimee Fenech is licensed under a <a class="links" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License.</a>
+
+        <h5 class="company">Freelance</h5>
+        <p class="job-title">Permaculture Educator</p>
+        <p class="dates">2015 to present</p>
+        <ul>
+          <li>Permaculture Garden Planning & Design</li>
+          <li>Compost Toilet Design</li>
+          <li>Humanure management</li>
+          <li>Preservation of food</li>
+        </ul>
+
+        <h5 class="company">Freelance</h5>
+        <p class="job-title">Junior Front End Web Developer</p>
+        <p class="dates">2018 to present</p>
+        <ul>
+          <li>website development</li>
+          <li>use current latest web technologies and trends: HTML5 | CSS | Bootstrap | JavaScript</li>
+        </ul>
+
+        <h5 class="company">Energie Dezent eV</h5>
+        <p class="job-title">Website Editor</p>
+        <p class="dates">2019 to present</p>
+        <ul>
+          <li>editorial duties, implementing new pages & content</li>
+          <li>liasing between board members and IT professionals for upkeep of the website</li>
+        </ul>
+
+        <h5 class="company">RioLaden - Wittstock</h5>
+        <p class="job-title">Finance Team Lead & Website Developer</p>
+        <p class="dates">2019 to 2021</p>
+        <ul>
+          <li>development of a business plan</li>
+          <li>design and upkeep of the website</li>
+          <li>research and developement of the <a href="https://docs.google.com/presentation/d/1ydgIMdkaB4GPZbxHvvvjPjvjxExNLMErVTsFVWzI17I/edit?usp=sharing">inclusive decision making model</a></li>
+        </ul>
+
+        <h5 class="company">Blevins Franks Financial Management Ltd.</h5>
+        <p class="job-title">Administration Manager</p>
+        <p class="dates">2015 to 2017</p>
+        <ul>
+          <li>case management</li>
+          <li>use xplan to enhance management of tasks, effective monitoring of cases and escalation of issues when required</li>
+          <li>working practices and procedures</li>
+          <li>continue working with local management to develop better working practices and procedures</li>
+          <li>provide assistance in the local office for adaptation of work practices to include xplan</li>
+          <li>relationship building and communication</li>
+          <li>be the link between with client services team and the local office</li>
+          <li>working with the team lead and the regional private client manager</li>
+        </ul>
+
+        <p class="job-title">Quality Assurance Lead</p>
+        <p class="dates">2014 - 2015</p>
+        <ul>
+          <li>leading Client Services QA focusing on the quality of the applications submitted to providers</li>
+          <li>co-ordination of large/complex new business cases</li>
+          <li>liaison between Client Services and the Compliance team</li>
+        </ul>
+
+        <p class="job-title">Compliance Officer</p>
+        <p class="dates">2011 to 2014</p>
+        <ul>
+          <li>check financial advisory reports</li>
+          <li>collate and compile MI reports</li>
+          <li>reviewing clients AML information</li>
+          <li>responding to clients complaints</li>
+          <li>answering interdepartmental procedural queries</li>
+          <li>updating and reviewing company procedures</li>
+          <li>maintaining various compliance logs</li>
+          <li>working on adhoc projects</li>
+        </ul>
+
+        <h5 class="company">Malta Women in Business</h5>
+        <p class="job-title">Founder | President | Editor</p>
+        <p class="dates">2011 to 2016</p>
+        <ul>
+          <li>represent the organisation at public events, public speaking and networking</li>
+          <li>organising training & networking events</li>
+          <li>dealing with client queries and provide one to one consultations for small business set ups</li>
+          <li>maintaining organisations website and social media profiles</li>
+          <li>setting up, writing and editing a monthly newsletter publication</li>
+        </ul>
+
+        <h5 class="company">Northway Broker Ltd.</h5>
+        <p class="job-title">Training Coordinator</p>
+        <p class="dates">2010 to 2011</p>
+        <ul>
+          <li>organise training schedules for new recruits and company employees</li>
+          <li>creating and updating training material</li>
+          <li>maintaining AML training material</li>
+          <li>delivering AML training and maintaining compliance</li>
+          <li>managing a team of trainers</li>
+        </ul>
+
+        <h5 class="company">SMP Partners Ltd.</h5>
+        <p class="job-title">Private Client Manager</p>
+        <p class="dates">2010</p>
+        <ul>
+          <li>providing fiduciary services to a portfolio of clients, including writing power of attorneys, opening bank accounts, document legalisation and resolutions</li>
+          <li>debt collecting and following up pending matters</li>
+        </ul>
+
+        <h5 class="company">AXA Isle of Man Ltd.</h5>
+        <p class="job-title">Compliance Advisor</p>
+        <p class="dates">2007 to 2009</p>
+        <ul>
+          <li>analyse regulatory developments and issued recommendations to maintain compliance</li>
+          <li>write and deliver training session for colleagues within the department</li>
+          <li>conduct investigations and evaluations of Suspicious Transactions</li>
+          <li>monitor departments and issued reports detailing procedural recommendations</li>
+          <li>coordinate the process for a new marketing department</li>
+          <li>direct Six Sigma project to map and implement processes to make the operations more effective and efficient</li>
+        </ul>
+
+        <h3>Education</h3>
+
+        <h5 class="company">Chartered Institute of Insurance</h5>
+        <p class="course-title">Life Office Administration, UK Financial Services, Regulations and Ethics</p>
+        <p class="dates">2008 to 2012</p>
+
+        <h5 class="company">Stonebridge College</h5>
+        <p class="course-title">Human Resources Management Diploma</p>
+        <p class="dates">2009</p>
+
+        <h5 class="company">freeCodeCamp</h5>
+        <p class="course-title">Responsive Web Design Certification</p>
+        <p class="dates">2018</p>
+
+        <h5 class="company">Permaculture Association UK / Aranya & Klaudia Van Gool</h5>
+        <p class="course-title">Permaculture Design Certificate</p>
+        <p class="dates">2019</p>
+
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Web development: HTML5 | CSS | Bootstrap | jQuery | Git | Github</li>
+          <li>Microsoft Office products: Word | Excel | Powerpoint | Outlook</li>
+          <li>Google Products: Drive | Docs | Sheets | Slides | Forms | Drawings | Maps | Sites</li>
+          <li>Salesforce</li>
+          <li>Project Management Tools: Scrum | Redmine</li>
+          <li>Dokuwiki</li>
+          <li>Sketchup</li>
+          <li>Six Sigma</li>
+          <li>Liberating Structures</li>
+        </ul>
+
+        <h3>Language Skills</h3>
+        <ul>
+          <li>Maltese | Mother tongue</li>
+          <li>English | Mother tongue</li>
+          <li>Italian | Fluent</li>
+          <li>Spanish | Basic</li>
+          <li>German  | Learning</li>
+        </ul>
+
+        <h3>Memberships</h3>
+        <ul>
+          <li>Permaculture International Research Network</li>
+          <li>Permaculture Association Britian</li>
+          <li>International Association of Facilitators</li>
+        </ul>
+
+        <h3>Volunteer Experience</h3>
+        
+        <h5 class="company">Artists Network Alpuarra</h5>
+        <p class="course-title">Board Member</p>
+        
+        <h5 class="company">Hackerspaces.org</h5>
+        <p class="course-title">Blog Editor, Project Manager for the Great Census of 2019</p>
+        <p class="dates">2018 to 2019</p>
+        
+        <h5 class="company">Living Ability Not Disability</h5>
+        <p class="course-title">Social Media Promoter, Carer & Companion</p>
+        <p class="dates">2005 to 2016</p>
+
+        <h3>Personal Interests</h3>
+        <ul>
+          <li>Responsible & Ethical finance</li>
+          <li>New technologies</li>
+          <li>Web development</li>
+          <li>Eco Communities & Villages</li>
+          <li>Eco Hacker Farm</li>
+          <li>Permaculture & organic food production</li>
+          <li>Politics & Peaceful Activism</li>
+          <li>Open Source software</li>
+          <li>Open Knowledge</li>
+          <li>Horse Riding, snorkelling and forest bathing</li>
+        </ul>
+
+        <h3>References</h3>
+        <ul>
+          <li>Available on request</li>
+        </ul>
+      </main>
+
+      <footer>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a><br>
+        Personal Curriculum Vitae by Aimee Fenech is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License.</a><br>
+        © <span id="y"></span> Aimee Fenech<br>
+        <br>
+        <a href="/meeting.html"><i class="fas fa-phone" aria-hidden="true"></i> Book a Meeting</a>
+        <br>
+      </footer>
     </div>
-  </footer>
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-</body>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

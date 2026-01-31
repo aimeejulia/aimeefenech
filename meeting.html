@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aimee Fenech - Book a Meeting</title>
+    <meta name="description" content="Book a meeting with Aimee Fenech" />
+    <link rel="stylesheet" href="/css/playground.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <a href="/index2.html" class="back-link" aria-label="Back to Home"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Home</a>
+      
+      <main class="card">
+        <h1>Book a Meeting</h1>
+        <div class="iframe-container">
+          <iframe src="https://app.cal.com/aimeefenech" title="Booking calendar" aria-label="Book a meeting with Aimee Fenech"></iframe>
+        </div>
+      </main>
+
+      <footer>
+        Website by Aimee Fenech is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License.</a><br>
+        © <span id="y"></span> Aimee Fenech
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

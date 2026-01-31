@@ -1,80 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aimee Fenech - Publications</title>
+    <meta name="description" content="Aimee Fenech - Publications" />
+    <link rel="stylesheet" href="/css/playground.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Aimee Fenech</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="css/playground.css" rel="stylesheet">
-</head>
+  <body>
+    <div class="container">
+      <a href="/index2.html" class="back-link" aria-label="Back to Home"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Home</a>
+      
+      <main class="card">
+        <h1>Publications</h1>        
+        <section class="publications-section">
+          <ul class="publications-list">
+            <li><a href="https://medium.com/@aimeejfenech" target="_blank" rel="noopener"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a> - Read my latest articles and insights on ecology and sustainable development</li>
+            <li><a href="https://aimeefenech.com/permaculture/" target="_blank" rel="noopener"><i class="fas fa-leaf" aria-hidden="true"></i> International Permaculture Colab Blog</a> - Collaborative work on permaculture practices and design</li>
+            <li><a href="https://aimeefenech.com/" target="_blank" rel="noopener"><i class="fas fa-tractor" aria-hidden="true"></i> Farm Life Blog</a> - Stories and learnings from farm and homestead living</li>
+          </ul>
+        </section>
 
-<body>
-  <div class="content">
-    <div id="main-page" class="container">
-      <header id="site-header">
-      <div id="header">
-        <h2>Aimee's Ecology</h2>
-        <p>
-          “The first law of ecology is that everything is related to everything else.” — Barry Commoner
-        </p>
-      </div>
-      <nav class="site-nav navbar navbar-expand-xl navbar-light">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNavbar" aria-controls="siteNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="siteNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="/board-membership.html">Board Membership</a></li>
-              <li class="nav-item"><a class="nav-link" href="/project-management.html">Project Management</a></li>
-              <li class="nav-item"><a class="nav-link" href="/enterprise-development.html">Enterprise Development</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://aimeefenech.com/permaculture/">Permaculture</a></li>
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="/publications.html">Publications</a></li>
-              <li class="nav-item"><a class="nav-link" href="/webdevprojects.html">Web Development</a></li>
-              <li class="nav-item"><a class="nav-link" href="/cv.html">CV</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-          <hr>
+        <section class="publications-section">
+          <h2>Other Publications</h2>
+          <p>Additional individual publications and articles will be linked here.</p>
+          <ul class="publications-list" id="other-publications">
+            <!-- Individual publications will be added here -->
+          </ul>
+        </section>
+      </main>
 
-    <div style="height: 200px; width: 50%; text-align:center; margin:auto;">
-
-    <div id="medium-widget">
-    </div>
-        <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-        <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@aimeejfenech","postsPerLine":2,"limit":100,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
+      <footer>
+        Website designed and coded by Aimee Fenech & licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License.</a><br>
+        © <span id="y"></span> Aimee Fenech<br>
+        <br>
+        <a href="/meeting.html"><i class="fas fa-phone" aria-hidden="true"></i> Book a Meeting</a>
+        <br>
+      </footer>
     </div>
 
-<footer class="page-footer font-small">
-  <br />
-  <div class="footer-copyright text-center py-3">Website designed and coded by Aimee Fenech & licensed under a <a class="links" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License.</a>
-  </div>
-</footer>
-
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <script type="text/javascript" src="js/site-nav.js"></script>
-</body>
-
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

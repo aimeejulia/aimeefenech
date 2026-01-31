@@ -1,85 +1,54 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Aimee's Design Portfolio</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aimee Fenech - Contact</title>
+    <meta name="description" content="Contact Aimee Fenech" />
+    <link rel="stylesheet" href="/css/playground.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/playground.css" rel="stylesheet">
   </head>
-<body>
-<header id="site-header">
-  <div id="header">
-    <h2>Aimee's contact form</h2>
-  </div>
-  <nav class="site-nav navbar navbar-expand-xl navbar-light">
+
+  <body>
     <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNavbar" aria-controls="siteNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="siteNavbar">
-        <ul class="navbar-nav nav nav-tabs">
-          <li class="nav-item"><a class="nav-link active" href="#">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html">Aimee's Ecology</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i></a></li>
-        </ul>
-      </div>
+      <a href="/index2.html" class="back-link" aria-label="Back to Home"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Home</a>
+      
+      <main class="card">
+        <h1>Contact Me</h1>
+        
+        <form method="POST" action="contact.php">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input id="email" type="email" name="email" required aria-describedby="emailHelp">
+            <small class="form-text" id="emailHelp">I'll never share your email address with anyone else without your explicit consent.</small>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <input type="submit" name="send" value="Send Message">
+        </form>
+      </main>
+
+      <footer>
+        Website by Aimee Fenech is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License.</a><br>
+        © <span id="y"></span> Aimee Fenech<br>
+        <br>
+        <a href="/meeting.html"><i class="fas fa-phone" aria-hidden="true"></i> Book a Meeting</a>
+        <br>
+      </footer>
     </div>
-  </nav>
-  </header>
-    <br />
-    <br />
-    <div class="container" id="form-box">
-      <br />
-      <form method="POST" action="contact.php">
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input id="email" type="email" name="email" class="form-control" required  aria-describedby="email">
-          <small class="form-text text-muted">I'll never share your email address with anyone else without your explicit consent.</small>
-        </div>
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input id="subject" name="subject" type="textarea" class="form-control" required>
-        </div>
-        <div class="form-group">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" class="form-control" rows="3" required></textarea>
-  </div>
-        <input type="submit" name="send" class="btn"></input>
-      </form>
-    </div>
-    <br />
-    <br />
-    <div width="60%" class="book-appointment">
-      <h4>Book a meeting</h4>
-      <p align="center">
-        <iframe src="https://app.cal.com/aimeefenech"  padding= "25%" height="500" width="60%"  margin= "0 auto" frameborder="0"></iframe>
-      </p>
-    </div>
-    <br />
-    <footer class="page-footer font-small footer navbar-fixed-bottom">
-      <div class="footer-copyright text-center py-3">Website by Aimee Fenech is licensed under a <a class="links" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License.</a>
-      </div>
-    </footer>
-  </div>
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <script type="text/javascript" src="js/site-nav.js"></script>
-</body>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
