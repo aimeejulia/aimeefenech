@@ -13,14 +13,51 @@ footer{
   height: 120px;
   font-family: 'Karla';
   text-align: center;
-  padding-top: 30px;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+} 
 
 .nav-link {
   color: #176ECF;
 }
 .nav-link:hover {
   color: #176ECF;
+}
+
+/* Site navbar link styles — keep usual sizing; only change colour and hover background */
+.site-nav .nav-link {
+  color: #176ECF;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+  color: #fff;
+  background-color: #176ECF; /* blue hover */
+  border-radius: 999px;   /* rounded pill */
+  text-decoration: none;
+}
+.site-nav .nav-link.active,
+.site-nav .nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #176ECF;
+}
+
+/* If navbar items overflow their container, force collapse into burger mode */
+.site-nav.force-collapse .navbar-toggler { display: block !important; }
+.site-nav.force-collapse .navbar-collapse { display: none !important; }
+.site-nav.force-collapse .navbar-collapse.show { display: block !important; }
+
+/* Ensure white text whenever a brand-blue background is applied */
+.site-nav .nav-link.active,
+.site-nav .nav-link:hover,
+.site-nav .nav-tabs .nav-link.active,
+.btn,
+.footer-copyright,
+#social-media,
+.flip-card .read-more {
+  color: #fff !important;
 }
 
 h4 {
@@ -81,6 +118,26 @@ a {
   color: #084298;
 }
 
+/* Sticky header for desktop/tablet (not on small screens) */
+@media (min-width: 768px) {
+  #site-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: none;
+  }
+  #site-header #header {
+    padding: 0;
+    margin: 0;
+  }
+  #site-header .site-nav {
+    border-top: 1px solid rgba(0,0,0,0.04);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    background: #fff;
+  }
+}
+
 #dynamic-ecosystem {
   padding: 50px;
 }
@@ -110,6 +167,22 @@ a {
   --card-color-rgba: rgba(255,213,79,0.25);
   --card-title-color: #111;
 }
+
+/* Enterprise page color theme — use site orange hover color */
+.enterprise .flip-card {
+  --card-color: orange;
+  --card-color-rgba: rgba(255,165,0,0.22);
+  --card-title-color: #fff;
+}
+.enterprise .flip-card-back {
+  color: #111; /* dark text for legibility */
+}
+.enterprise .flip-card .read-more {
+  background-color: orange !important;
+  box-shadow: 0 2px 6px rgba(255,165,0,0.12);
+  color: #fff !important;
+}
+
 .flip-card a {
   display:block;
   color:inherit;
