@@ -59,9 +59,9 @@
             <!-- Replace img src and href with real images and links -->
             <div class="flip-card" tabindex="0">
                 <button class="info-btn" aria-label="More info about The Digital Circle">i</button>
-                <a href="#" target="_blank" rel="noopener" aria-label="Open The Digital Circle website">
+                <a href="https://thedigitalcircle.org" target="_blank" rel="noopener" aria-label="Open The Digital Circle website">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                        <div class="flip-card-front">
                             <div class="flip-card-title">The Digital Circle</div>
                         </div>
                         <div class="flip-card-back">
@@ -75,7 +75,7 @@
                 <button class="info-btn" aria-label="More info about Funding Circle Services">i</button>
                 <a href="#" target="_blank" rel="noopener" aria-label="Open Funding Circle Services website">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                        <div class="flip-card-front">
                             <div class="flip-card-title">Funding Circle Services</div>
                         </div>
                         <div class="flip-card-back">
@@ -89,7 +89,7 @@
                 <button class="info-btn" aria-label="More info about Comms Consultancy Team">i</button>
                 <a href="#" target="_blank" rel="noopener" aria-label="Open Comms Consultancy Team website">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                        <div class="flip-card-front">
                             <div class="flip-card-title">Comms Consultancy Team</div>
                         </div>
                         <div class="flip-card-back">
@@ -103,7 +103,7 @@
                 <button class="info-btn" aria-label="More info about The Self-Care Garden">i</button>
                 <a href="#" target="_blank" rel="noopener" aria-label="Open The Self-Care Garden website">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                        <div class="flip-card-front">
                             <div class="flip-card-title">The Self-Care Garden</div>
                         </div>
                         <div class="flip-card-back">
@@ -117,7 +117,7 @@
                 <button class="info-btn" aria-label="More info about permacultureconvergence">i</button>
                 <a href="#" target="_blank" rel="noopener" aria-label="Open permacultureconvergence website">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                        <div class="flip-card-front">
                             <div class="flip-card-title">permacultureconvergence</div>
                         </div>
                         <div class="flip-card-back">
@@ -131,7 +131,7 @@
                 <button class="info-btn" aria-label="More info about Lanjaron Living">i</button>
                 <a href="#" target="_blank" rel="noopener" aria-label="Open Lanjaron Living website">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                        <div class="flip-card-front">
                             <div class="flip-card-title">Lanjaron Living</div>
                         </div>
                         <div class="flip-card-back">
@@ -143,9 +143,9 @@
 
             <div class="flip-card" tabindex="0">
                 <button class="info-btn" aria-label="More info about Minimum Viable Academy">i</button>
-                <a href="#" target="_blank" rel="noopener" aria-label="Open Minimum Viable Academy website">
+                <a href="https://minimumviable.academy" target="_blank" rel="noopener" aria-label="Open Minimum Viable Academy website">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                        <div class="flip-card-front">
                             <div class="flip-card-title">Minimum Viable Academy</div>
                         </div>
                         <div class="flip-card-back">
@@ -159,7 +159,7 @@
                 <button class="info-btn" aria-label="More info about Finca Verde Regen">i</button>
                 <a href="https://fincaverderegen.com" target="_blank" rel="noopener" aria-label="Open Finca Verde Regen website">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                        <div class="flip-card-front">
                             <div class="flip-card-title">Finca Verde Regen</div>
                         </div>
                         <div class="flip-card-back">
@@ -177,57 +177,35 @@
     <br />
 
     <script>
-    // Flip and click behaviour for cards
+    // Simplified flip/click behaviour (color is now handled in CSS)
     document.addEventListener('DOMContentLoaded', function(){
       document.querySelectorAll('.flip-card').forEach(function(card){
         var btn = card.querySelector('.info-btn');
         var link = card.querySelector('a');
 
-        // Info button toggles flip (works for mouse + keyboard + touch)
         if (btn) {
           btn.addEventListener('click', function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            card.classList.toggle('flipped');
+            e.stopPropagation(); e.preventDefault(); card.classList.toggle('flipped');
           });
           btn.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }});
         }
 
-        // On touch devices: first tap flips, second tap follows the link (if set)
         card.addEventListener('click', function(e){
-          if (e.target.closest('.info-btn')) return; // handled above
-
+          if (e.target.closest('.info-btn')) return;
           var isTouch = ('ontouchstart' in window) || window.matchMedia('(hover: none)').matches;
-
           if (isTouch) {
-            if (!card.classList.contains('flipped')) {
-              e.preventDefault();
-              card.classList.add('flipped');
-              return;
-            }
-            // if already flipped, allow link to open normally
+            if (!card.classList.contains('flipped')) { e.preventDefault(); card.classList.add('flipped'); return; }
             return;
           }
-
-          // On non-touch (desktop) allow normal click to open link in new tab
-          // (no need to intercept) — hover handles flip on desktop
         });
 
-        // Accessibility: allow Enter/Space on the card to follow the link when focused
         card.addEventListener('keydown', function(e){
           if ((e.key === 'Enter' || e.key === ' ') && document.activeElement === card) {
-            // If touch-mode and card isn't flipped, flip first
             var isTouch = ('ontouchstart' in window) || window.matchMedia('(hover: none)').matches;
-            if (isTouch && !card.classList.contains('flipped')) {
-              e.preventDefault();
-              card.classList.add('flipped');
-            } else {
-              // follow link
+            if (isTouch && !card.classList.contains('flipped')) { e.preventDefault(); card.classList.add('flipped'); }
+            else {
               var link = card.querySelector('a');
-              if (link && link.href && link.href.indexOf('#') !== 0) {
-                link.target = '_blank';
-                window.open(link.href, '_blank', 'noopener');
-              }
+              if (link && link.href && link.href.indexOf('#') !== 0) { link.target = '_blank'; window.open(link.href, '_blank', 'noopener'); }
             }
           }
         });
