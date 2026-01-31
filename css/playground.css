@@ -10,14 +10,20 @@ footer{
 }
 
 #header {
-  height: 120px;
+  min-height: 120px;
   font-family: 'Karla';
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0;
-} 
+  padding: 0.75rem 1rem;
+}
+#header p {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.95rem;
+  color: #555;
+}
 
 .nav-link {
   color: #176ECF;
@@ -127,6 +133,8 @@ a {
     background-color: #fff;
     box-shadow: none;
   }
+  /* restore subtle shadow only for the home page header */
+  .home #site-header { box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
   #site-header #header {
     padding: 0;
     margin: 0;
