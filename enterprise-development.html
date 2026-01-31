@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="css/playground.css" rel="stylesheet">
+    <link href="css/playground.css?v=20260131" rel="stylesheet">
   </head>
 <body>
 
@@ -53,9 +53,129 @@
     <hr>
     <div class="container">
         <h3>Enterprise Development Work</h3>
-        <p>Details about enterprise development projects and initiatives go here.</p>
+        <p>Below are examples of enterprises I’ve supported — hover to flip for a short description. Click an item to visit the enterprise website (opens in a new tab).</p>
+
+        <div class="flip-grid" aria-live="polite">
+            <!-- Replace img src and href with real images and links -->
+            <div class="flip-card" tabindex="0">
+                <button class="info-btn" aria-label="More info about The Digital Circle">i</button>
+                <a href="#" target="_blank" rel="noopener" aria-label="Open The Digital Circle website">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                            <div class="flip-card-title">The Digital Circle</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>A digital cooperative offering services for online community building.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flip-card" tabindex="0">
+                <button class="info-btn" aria-label="More info about Funding Circle Services">i</button>
+                <a href="#" target="_blank" rel="noopener" aria-label="Open Funding Circle Services website">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                            <div class="flip-card-title">Funding Circle Services</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Financial services and advice for social enterprises.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flip-card" tabindex="0">
+                <button class="info-btn" aria-label="More info about Comms Consultancy Team">i</button>
+                <a href="#" target="_blank" rel="noopener" aria-label="Open Comms Consultancy Team website">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                            <div class="flip-card-title">Comms Consultancy Team</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Strategic communications and public engagement.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flip-card" tabindex="0">
+                <button class="info-btn" aria-label="More info about The Self-Care Garden">i</button>
+                <a href="#" target="_blank" rel="noopener" aria-label="Open The Self-Care Garden website">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                            <div class="flip-card-title">The Self-Care Garden</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Wellbeing programs and community gardens.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flip-card" tabindex="0">
+                <button class="info-btn" aria-label="More info about permacultureconvergence">i</button>
+                <a href="#" target="_blank" rel="noopener" aria-label="Open permacultureconvergence website">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                            <div class="flip-card-title">permacultureconvergence</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Events and networks for permaculture practitioners.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flip-card" tabindex="0">
+                <button class="info-btn" aria-label="More info about Lanjaron Living">i</button>
+                <a href="#" target="_blank" rel="noopener" aria-label="Open Lanjaron Living website">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                            <div class="flip-card-title">Lanjaron Living</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Regenerative living projects in Lanjaron.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flip-card" tabindex="0">
+                <button class="info-btn" aria-label="More info about Minimum Viable Academy">i</button>
+                <a href="#" target="_blank" rel="noopener" aria-label="Open Minimum Viable Academy website">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image:url('img/backgroundimage.jpg')">
+                            <div class="flip-card-title">Minimum Viable Academy</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Practical skills and short courses for founders.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <p class="mt-3 small text-muted">Tip: on touch devices, tap the small <strong>i</strong> button to view the description without leaving the page.</p>
+
     </div>
     <br />
+
+    <script>
+    // Flip toggle for the info button (useful on touch devices)
+    document.addEventListener('DOMContentLoaded', function(){
+      document.querySelectorAll('.flip-card .info-btn').forEach(function(btn){
+        btn.addEventListener('click', function(e){
+          e.stopPropagation();
+          e.preventDefault();
+          var card = this.closest('.flip-card');
+          card.classList.toggle('flipped');
+        });
+        btn.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }});
+      });
+    });
+    </script>
 <footer class="page-footer font-small">
     <div class="footer-copyright text-center py-3"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /><br></a>Personal Curriculum Vitae by Aimee Fenech is licensed under a <a class="links" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License.</a>
     </div>
