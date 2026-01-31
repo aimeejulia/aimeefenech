@@ -102,24 +102,35 @@ a {
   height: 280px;
   perspective: 1000px;
   position: relative;
+  box-sizing: border-box;
+  min-width: 220px;
+  min-height: 220px;
 }
 .flip-card a {
   display:block;
   color:inherit;
   text-decoration:none;
+  height:100%;
 }
 .flip-card-inner {
   position: relative;
   width:100%;
   height:100%;
   transition: transform 0.6s;
+  -webkit-transition: -webkit-transform 0.6s;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
   border-radius:50%;
+  transform-origin: center center;
+  will-change: transform;
 }
 .flip-card:hover .flip-card-inner,
 .flip-card:focus-within .flip-card-inner,
 .flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 .flip-card-front,
 .flip-card-back {
@@ -127,6 +138,7 @@ a {
   width:100%;
   height:100%;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius:50%;
   overflow:hidden;
   display:flex;
@@ -135,25 +147,52 @@ a {
   text-align:center;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
+/* ensure front is visible by default and sits above back when not flipped */
 .flip-card-front {
   background-size: cover;
   background-position:center;
   color: white;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  z-index: 2;
 }
-.flip-card-back {
-  background-color: rgba(255,255,255,0.95);
-  color: #222;
-  transform: rotateY(180deg);
-  padding:1rem;
+.flip-card-front::before{
+  content: '';
+  position:absolute;
+  inset:0;
+  background: linear-gradient(rgba(0,0,0,0.08), rgba(0,0,0,0.12));
+  z-index:1;
 }
-.flip-card-title {
+.flip-card-title{
+  position:relative;
+  z-index:2;
   background: rgba(0,0,0,0.45);
   padding:0.5rem 0.75rem;
   border-radius: 999px;
   font-weight:700;
   font-size:1.1rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  transition: opacity 0.22s ease, visibility 0.22s ease, transform 0.22s ease;
 }
-.flip-card-back p { margin:0; font-size:0.95rem; }
+/* hide front title when tile is flipped (or hovered to flip on desktop) */
+.flip-card.flipped .flip-card-front .flip-card-title,
+.flip-card:hover .flip-card-front .flip-card-title {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+}
+.flip-card-back {
+  background-color: rgba(255,255,255,0.97);
+  color: #222;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  padding:1rem;
+  box-sizing: border-box;
+  line-height:1.35;
+  overflow:auto;
+  z-index: 1;
+}
+.flip-card-back p { margin:0; font-size:0.95rem; line-height:1.35; }
 .info-btn {
   position:absolute;
   right:8px;
