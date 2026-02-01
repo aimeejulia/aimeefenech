@@ -1,0 +1,77 @@
+================================================================================
+WEBSITE LICENSE - Aimee Fenech Portfolio
+================================================================================
+
+This website and all content within it (unless otherwise specified) are licensed 
+under the Creative Commons Attribution 4.0 International License (CC-BY-4.0).
+
+================================================================================
+WHAT THIS MEANS
+================================================================================
+
+You are free to:
+  • Share — copy and redistribute the material in any medium or format
+  • Adapt — remix, transform, and build upon the material for any purpose, 
+    even commercially
+
+Under the following terms:
+  • Attribution — You must give appropriate credit, provide a link to the 
+    license, and indicate if changes were made. You may do this in any 
+    reasonable manner.
+
+More details at: http://creativecommons.org/licenses/by/4.0/
+
+================================================================================
+ATTRIBUTED CONTENT
+================================================================================
+
+The following works are attributed to Aimee Fenech:
+  • Website design and layout
+  • Original written content
+  • Code and scripts
+  • Original images and media
+
+================================================================================
+THIRD-PARTY LICENSES
+================================================================================
+
+This website uses the following third-party resources:
+
+1. Font Awesome (Icons)
+   License: Various (mostly CC-BY-4.0 and OFL-1.1)
+   https://fontawesome.com/license
+
+2. Bootstrap CSS Framework
+   License: MIT
+   https://github.com/twbs/bootstrap/blob/main/LICENSE
+
+3. Material Design Bootstrap (MDB)
+   License: Commercial/Free
+   https://mdbootstrap.com/license/
+
+4. Google Fonts
+   License: Open Font License
+   https://fonts.google.com/metadata/fonts
+
+================================================================================
+COPYRIGHT & ATTRIBUTION
+================================================================================
+
+© Aimee Fenech
+All rights reserved unless otherwise stated in this license.
+
+When using content from this website, please attribute as follows:
+"Content by Aimee Fenech (http://aimeefenech.com)"
+
+================================================================================
+PRIVACY & DATA
+================================================================================
+
+Any personal data collected through contact forms is subject to our privacy 
+practices and will not be shared without explicit consent.
+
+================================================================================
+QUESTIONS?
+================================================================================
+
+For licensing inquiries, contact: mail@aimeefenech.com
