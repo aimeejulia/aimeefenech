@@ -41,6 +41,10 @@
 ini_set('display_errors', 'On');
 error_reporting(E_ALL | E_STRICT);
 if(isset($_POST['email'])) {
+  // Honeypot spam check
+  if(!empty($_POST['website'])) {
+    exit('Spam detected');
+  }
 
   // EDIT THE 2 LINES BELOW AS REQUIRED
   $email_to = "mail@aimeefenech.com";
