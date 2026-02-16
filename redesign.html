@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aimee Fenech</title>
+    <meta name="description" content="Aimee Fenech. Website redesign in progress. Contact: mail@aimeefenech.com" />
+    <style>
+      :root {
+        --bg: #0b0f14;
+        --card: rgba(255, 255, 255, 0.06);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.72);
+        --border: rgba(255, 255, 255, 0.12);
+      }
+
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+          "Segoe UI Emoji";
+        color: var(--text);
+        background: radial-gradient(900px 600px at 20% 20%, rgba(120, 180, 255, 0.18), transparent 60%),
+                    radial-gradient(900px 700px at 80% 30%, rgba(170, 120, 255, 0.14), transparent 55%),
+                    radial-gradient(900px 700px at 50% 90%, rgba(120, 255, 190, 0.10), transparent 55%),
+                    var(--bg);
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .card {
+        width: min(720px, 100%);
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 28px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(10px);
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(28px, 4vw, 40px);
+        letter-spacing: 0.2px;
+      }
+
+      p {
+        margin: 0;
+        line-height: 1.55;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      .row {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-top: 18px;
+        flex-wrap: wrap;
+      }
+
+      a {
+        color: var(--text);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255,255,255,0.35);
+      }
+      a:hover { border-bottom-color: rgba(255,255,255,0.75); }
+
+      /* CSS-only loading icon */
+      .loader {
+        width: 46px;
+        height: 46px;
+        border-radius: 999px;
+        border: 4px solid rgba(255, 255, 255, 0.18);
+        border-top-color: rgba(255, 255, 255, 0.9);
+        animation: spin 0.9s linear infinite;
+        flex: 0 0 auto;
+      }
+
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+
+      /* Optional: gentle animated dots after "Loading" */
+      .dots::after {
+        content: "";
+        display: inline-block;
+        width: 1.2em;
+        text-align: left;
+        animation: dots 1.4s steps(4, end) infinite;
+      }
+      @keyframes dots {
+        0%   { content: ""; }
+        25%  { content: "."; }
+        50%  { content: ".."; }
+        75%  { content: "..."; }
+        100% { content: ""; }
+      }
+
+      footer {
+        margin-top: 18px;
+        font-size: 13px;
+        color: rgba(255,255,255,0.55);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="card">
+      <h1>Aimee Fenech</h1>
+
+      <p>
+        I am redesigning my website. In the meantime, feel free to email me on
+        <a href="mailto:mail@aimeefenech.com">mail@aimeefenech.com</a>.
+      </p>
+
+      <div class="row" aria-label="Loading indicator">
+        <div class="loader" aria-hidden="true"></div>
+        <p><strong style="color: rgba(255,255,255,0.92); font-weight: 600;">Loading</strong><span class="dots"></span></p>
+      </div>
+
+      <footer>
+        © <span id="y"></span> Aimee Fenech
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
